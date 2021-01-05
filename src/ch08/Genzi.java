@@ -5,25 +5,25 @@ public class Genzi implements CharacterInterface {
 	@Override
 	public void move() {
 		// TODO Auto-generated method stub
-		System.out.println("°ÕÁö°¡ º®Å¸°í ÀÌµ¿ÇÕ´Ï´Ù.");
+		System.out.println("ê²ì§€ê°€ ë²½íƒ€ê³  ì´ë™í•©ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void stop() {
 		// TODO Auto-generated method stub
-		System.out.println("°ÕÁö°¡ º®Å¸°í ÀÌµ¿À» ¸ØÃä´Ï´Ù. ");
+		System.out.println("ê²ì§€ê°€ ë²½íƒ€ê³  ì´ë™ì„ ë©ˆì¶¥ë‹ˆë‹¤. ");
 	}
 
 	@Override
 	public void attack() {
 		// TODO Auto-generated method stub
-		System.out.println("°ÕÁö°¡ ¼ö¸®°ËÀ¸·Î °ø°İÇÕ´Ï´Ù.");
+		System.out.println("ê²ì§€ê°€ ìˆ˜ë¦¬ê²€ìœ¼ë¡œ ê³µê²©í•©ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void skill() {
 		// TODO Auto-generated method stub
-		System.out.println("°ÕÁö°¡ ¿ë°ËÀ» »ç¿ëÇÕ´Ï´Ù.");
+		System.out.println("ê²ì§€ê°€ ìš©ê²€ì„ ì‚¬ìš©í•©ë‹ˆë‹¤.");
 	}
 
 }

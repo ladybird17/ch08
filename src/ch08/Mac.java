@@ -5,25 +5,25 @@ public class Mac implements CharacterInterface {
 	@Override
 	public void move() {
 		// TODO Auto-generated method stub
-		System.out.println("¸ÆÅ©¸®°¡ ÀÌµ¿ÇÕ´Ï´Ù.");
+		System.out.println("ë§¥í¬ë¦¬ê°€ ì´ë™í•©ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void stop() {
 		// TODO Auto-generated method stub
-		System.out.println("¸ÆÅ©¸®°¡ ÀÌµ¿À» ¸ØÃä´Ï´Ù.");
+		System.out.println("ë§¥í¬ë¦¬ê°€ ì´ë™ì„ ë©ˆì¶¥ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void attack() {
 		// TODO Auto-generated method stub
-		System.out.println("¸ÆÅ©¸®°¡ ÇÇ½ºÅ°ÆÛ·Î °ø°İÇÕ´Ï´Ù.");
+		System.out.println("ë§¥í¬ë¦¬ê°€ í”¼ìŠ¤í‚¤í¼ë¡œ ê³µê²©í•©ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void skill() {
 		// TODO Auto-generated method stub
-		System.out.println("¸ÆÅ©¸®°¡ È²¾ßÀÇ ¹«¹ıÀÚ¸¦ »ç¿ëÇÕ´Ï´Ù.");
+		System.out.println("ë§¥í¬ë¦¬ê°€ í™©ì•¼ì˜ ë¬´ë²•ìë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤.");
 	}
 
 }

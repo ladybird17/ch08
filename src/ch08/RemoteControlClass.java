@@ -1,6 +1,7 @@
+  
 package ch08;
 
-//Ãß»óÅ¬·¡½º¹öÀü
+//ì¶”ìƒí´ë˜ìŠ¤ë²„ì „
 public abstract class RemoteControlClass {
 	public final static int MAX_VOLUME = 10;
 	public final static int MIN_VOLUME = 0;
@@ -11,10 +12,10 @@ public abstract class RemoteControlClass {
 
 	public void setMute(boolean mute) {
 		if(mute) {
-			System.out.println("¹«À½ Ã³¸®ÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ìŒ ì²˜ë¦¬í•©ë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("¹«À½ ÇØÁ¦ÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ìŒ í•´ì œí•©ë‹ˆë‹¤.");
 		}
 	}
 }

@@ -6,13 +6,13 @@ public class Television implements RemoteControl {
 	
 	@Override
 	public void turnOn() {
-		System.out.println("TV¸¦ ÄÕ´Ï´Ù.");
+		System.out.println("TVë¥¼ ì¼­ë‹ˆë‹¤.");
 
 	}
 
 	@Override
 	public void turnOff() {
-		System.out.println("TV¸¦ ²ü´Ï´Ù.");
+		System.out.println("TVë¥¼ ë•ë‹ˆë‹¤.");
 
 	}
 
@@ -27,7 +27,7 @@ public class Television implements RemoteControl {
 		else {
 			this.volume = volume;
 		}
-		System.out.printf("ÇöÀç TV º¼·ı : %d\n",this.volume);
+		System.out.printf("í˜„ì¬ TV ë³¼ë¥¨ : %d\n",this.volume);
 	}
 
 }

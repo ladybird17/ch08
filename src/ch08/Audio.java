@@ -6,12 +6,12 @@ public class Audio implements RemoteControl {
 	
 	@Override
 	public void turnOn() {
-		System.out.println("Audio¸¦ ÄÕ´Ï´Ù.");
+		System.out.println("Audioë¥¼ ì¼­ë‹ˆë‹¤.");
 	}
 	
 	@Override
 	public void turnOff() {
-		System.out.println("Audio¸¦ ²ü´Ï´Ù.");
+		System.out.println("Audioë¥¼ ë•ë‹ˆë‹¤.");
 	}
 	
 	@Override
@@ -25,6 +25,6 @@ public class Audio implements RemoteControl {
 		else {
 			this.volume = volume;
 		}
-		System.out.printf("ÇöÀç Audio º¼·ı : %d\n",this.volume);
+		System.out.printf("í˜„ì¬ Audio ë³¼ë¥¨ : %d\n",this.volume);
 	}
 }
