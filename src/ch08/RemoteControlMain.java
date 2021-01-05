@@ -17,11 +17,11 @@ public class RemoteControlMain {
 		audio.setVolume(-10);
 		audio.turnOff();
 		
-		System.out.println("------ÀÎÅÍÆäÀÌ½ºÀÇ ´ÙÇü¼º-----");
+		System.out.println("------ì¸í„°íŽ˜ì´ìŠ¤ì˜ ë‹¤í˜•ì„±-----");
 		/*
-		 ÀÎÅÍÆäÀÌ½ºµµ ´ÙÇü¼º ±¸Çö °¡´É
-		 ÀÎÅÍÆäÀÌ½º Å¸ÀÔÀÇ º¯¼ö´Â »ý¼º °¡´É(°´Ã¼È­ ºÒ°¡)
-		 ÀÎÅÍÆäÀÌ½º Å¸ÀÔÀÇ º¯¼ö¿¡ ±¸Çö Å¬·¡½º Å¸ÀÔÀÇ °´Ã¼¸¦ ´ëÀÔ °¡´É
+		 ì¸í„°íŽ˜ì´ìŠ¤ë„ ë‹¤í˜•ì„± êµ¬í˜„ ê°€ëŠ¥
+		 ì¸í„°íŽ˜ì´ìŠ¤ íƒ€ìž…ì˜ ë³€ìˆ˜ëŠ” ìƒì„± ê°€ëŠ¥(ê°ì²´í™” ë¶ˆê°€)
+		 ì¸í„°íŽ˜ì´ìŠ¤ íƒ€ìž…ì˜ ë³€ìˆ˜ì— êµ¬í˜„ í´ëž˜ìŠ¤ íƒ€ìž…ì˜ ê°ì²´ë¥¼ ëŒ€ìž… ê°€ëŠ¥
 		 */
 		
 		RemoteControl rc;
@@ -36,6 +36,40 @@ public class RemoteControlMain {
 		rc.setMute(false);
 		rc.setVolume(8);
 		rc.turnOff();
+		
+		System.out.println("\n-----ìµëª… êµ¬í˜„ ê°ì²´ ì‚¬ìš©-----\n");
+		
+		RemoteControl rc1 = new RemoteControl() {
+			
+			private int volume;
+			
+			@Override
+			public void turnOn() {
+				System.out.println("ì „ì›ì´ ì¼œì§‘ë‹ˆë‹¤.");
+			}
+			@Override
+			public void turnOff() {
+				System.out.println("ì „ì›ì´ êº¼ì§‘ë‹ˆë‹¤.");
+			}
+			@Override
+			public void setVolume(int volume) {
+				if (volume>RemoteControl.MAX_VOLUME) {
+					this.volume = RemoteControl.MAX_VOLUME;
+				}
+				else if(volume <RemoteControl.MIN_VOLUME) {
+					this.volume = RemoteControl.MIN_VOLUME;
+				}
+				else {
+					this.volume = volume;
+				}
+				System.out.printf("í˜„ìž¬ ë³¼ë¥¨ì€ : %d\n",this.volume);
+			}
+		};
+		
+		rc1.turnOn();
+		rc1.setVolume(10);
+		rc1.setMute(true);
+		rc1.turnOff();
 	}
 
 }
